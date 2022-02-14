@@ -1,23 +1,25 @@
 ﻿<!-- nav -->
 <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
     <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
+        <a class="nav-item nav-link" routerLink="/users" *ngIf="isAdmin" routerLinkActive="active">Users</a>
         <a class="nav-item nav-link" (click)="logout()">Logout</a>
     </div>
 </nav>
 
 <!-- main app container -->
-<div class="container">
+<div class="container bg-light">
+    <alert></alert>
     <router-outlet></router-outlet>
 </div>
 
 <!-- credits -->
 <div class="text-center mt-4">
     <p>
-        <a href="https://jasonwatmore.com/post/2020/09/09/angular-10-role-based-authorization-tutorial-with-example" target="_top">Angular 10 - Role Based Authorization Tutorial with Example</a>
+        <a href="https://QasimSarwar/post/2020/09/09/Angular role based authorization with Reactive Forms" target="_top">Angular role based authorization with Reactive Forms</a>
     </p>
     <p>
-        <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+        <a href="https://QasimSarwar" target="_top">QasimSarwar</a>
     </p>
 </div>

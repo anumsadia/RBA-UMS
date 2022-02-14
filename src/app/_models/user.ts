@@ -6,5 +6,6 @@ export class User {
     lastName: string;
     username: string;
     role: Role;
+    isDeleting: boolean = false;
     token?: string;
 }

@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
+import { AlertComponent } from './_components';
 import { HomeComponent } from './home';
 import { AdminComponent } from './admin';
 import { LoginComponent } from './login';
@@ -23,6 +24,7 @@ import { LoginComponent } from './login';
     ],
     declarations: [
         AppComponent,
+        AlertComponent,
         HomeComponent,
         AdminComponent,
         LoginComponent
@@ -37,4 +39,4 @@ import { LoginComponent } from './login';
     bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule { };
