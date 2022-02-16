@@ -2,4 +2,4 @@
 
 Angular 10 - Role Based Authorization Example
 
-To see a demo and further details go to https://QasimSarwar/post/2020/09/09/Angular role based authorization with Reactive Forms
+To see a demo and further details go to https://github.com/anumsadia/RBA-UMS role based authorization with Reactive Forms
