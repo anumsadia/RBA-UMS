@@ -6,7 +6,7 @@ import { delay, materialize, dematerialize } from 'rxjs/operators';
 import { Role } from '@app/_models';
 
 const users = [
-    { id: 1, username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
+    { id: 1, username: 'anum', password: '123456',email:"anum123@gmail.com", firstName: 'Anum', lastName: 'Sadia', role: Role.Admin },
     { id: 2, username: 'user', password: 'user', firstName: 'Normal', lastName: 'User', role: Role.User }
 ];
 
